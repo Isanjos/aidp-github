@@ -1,0 +1,16 @@
+{
+  "runAs" : null,
+  "name" : "job_bundle",
+  "description" : "",
+  "schedule" : null,
+  "continuous" : null,
+  "maxConcurrentRuns" : 1,
+  "gitConfig" : null,
+  "queue" : null,
+  "path" : "/Workspace/jobs",
+  "jobClusters" : null,
+  "tasks" : null,
+  "parameters" : null,
+  "timeoutSeconds" : null,
+  "jobTag" : null
+}
