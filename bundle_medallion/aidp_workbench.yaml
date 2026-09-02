@@ -1,0 +1,10 @@
+bundle:
+  name: "bundle_medallion"
+resources:
+  jobs:
+  - "codex_medallion_demo"
+defaults:
+  publish:
+    path: "/Workspace/Shared/bundle_medallion"
+    overwrite_publish_artifacts: false
+    preserve_resource_name: true
