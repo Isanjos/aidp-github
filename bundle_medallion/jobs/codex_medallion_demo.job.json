@@ -1,0 +1,1159 @@
+{
+  "runAs" : null,
+  "name" : "${publish.resource_name_prefix}codex_medallion_demo${publish.resource_name_suffix}",
+  "description" : null,
+  "schedule" : null,
+  "continuous" : null,
+  "maxConcurrentRuns" : 1,
+  "gitConfig" : null,
+  "queue" : null,
+  "path" : "/Workspace/Shared/codex_medallion_demo",
+  "jobClusters" : [ {
+    "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+    "newCluster" : null
+  } ],
+  "tasks" : [ {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_01",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/01_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_02",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/02_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_03",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/03_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_04",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/04_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_05",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/05_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_06",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/06_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_07",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/07_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_08",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/08_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_09",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/09_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "bronze_10",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/10_bronze_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_01",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/01_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_02",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/02_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_03",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/03_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_04",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/04_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_05",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/05_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_06",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/06_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_07",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/07_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_08",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/08_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_09",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/09_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "silver_10",
+    "dependsOn" : [ {
+      "taskKey" : "bronze_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "bronze_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/10_silver_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_01",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/01_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_02",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/02_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_03",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/03_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_04",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/04_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_05",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/05_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_06",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/06_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_07",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/07_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_08",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/08_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_09",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/09_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  }, {
+    "type" : "NOTEBOOK_TASK",
+    "taskKey" : "gold_10",
+    "dependsOn" : [ {
+      "taskKey" : "silver_01",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_02",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_03",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_04",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_05",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_06",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_07",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_08",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_09",
+      "outcome" : null
+    }, {
+      "taskKey" : "silver_10",
+      "outcome" : null
+    } ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 1,
+    "minRetryIntervalMillis" : 30000,
+    "isRetryOnTimeout" : false,
+    "notebookPath" : "${publish.path}/artifacts/10_gold_step.ipynb",
+    "source" : "WORKSPACE",
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.cluster_codex.compute.key}",
+      "newCluster" : null
+    },
+    "parameters" : null,
+    "timeoutSeconds" : 600,
+    "isStreaming" : null
+  } ],
+  "parameters" : null,
+  "timeoutSeconds" : null,
+  "jobTag" : null
+}
