@@ -1,6 +1,0 @@
----
-bundle:
-  name: "aidp_bundle"
-resources:
-  jobs:
-  - "job_bundle"
